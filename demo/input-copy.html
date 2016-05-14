@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>input-copy</title>
+</head>
+<body>
+	<input class="url" style="width:220px" value="https://github.com/bornbit/nanoclipboard"></input>
+	<button id="btn" data-clipboard-selector=".url" title="Copy Me!">Copy</button>
+
+	<script type="text/javascript" src="../dist/nanoclipboard.min.js"></script>
+	<script type="text/javascript">
+		var clipboard = new NanoClipboard("#btn");
+
+		clipboard.onSuccess = function(text) {
+			alert("Copied: " + text)
+			this.unselect();
+		};
+
+		clipboard.onError = function(text) {
+			window.prompt("Ctrl+C: ", text);
+			// this.unselect();
+		};
+	</script>
+</body>
+</html>

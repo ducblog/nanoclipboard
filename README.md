@@ -18,11 +18,8 @@ clipboard.onError = function(text) {
 
 ## CDN
 nanoclipboard's CDN provided by [jsDelivr CDN](https://www.jsdelivr.com)
-> https://www.jsdelivr.com/projects/nanoclipboard
 
-```html
-<script type="text/javascript" src="http://cdn.jsdelivr.net/nanoclipboard/1.0.0/nanoclipboard.min.js"></script>
-```
+> https://www.jsdelivr.com/projects/nanoclipboard
 
 ## Demo
 - [basic-copy.html](http://htmlpreview.github.io/?https://github.com/bornbit/nanoclipboard/blob/master/demo/basic-copy.html)
